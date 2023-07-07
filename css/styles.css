@@ -1,0 +1,18 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Microgramma';
+    src: url(../fonts/Microgramma.ttf) format(truetype);
+}
+
+header nav ul li a {
+    font-family: 'Microgramma', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}

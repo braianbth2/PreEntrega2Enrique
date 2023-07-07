@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  background-color: black;
+}
+
+.menu {
+  padding-top: 10px;
+  background-color: rgb(25, 25, 25);
+
+}
+
+
+/* fuente externa para header */
+
+@font-face {
+  font-family: 'Microgramma';
+  src: url(../fonts/Microgramma.ttf) format(truetype);
+}
+
+/* header */
+
+header {
+  background-color: rgb(25, 25, 25);
+  top: 0px;
+  position: sticky;
+  z-index: 2;
+}
+
+
+header nav div {
+  display: flex;
+  list-style: none;
+  color: aliceblue;
+  margin-left: 25px;
+  gap: 100vh;
+  padding-bottom: 5px;
+}
+
+
+
+header nav div ul li {
+  margin: 5px;
+  padding: 15px;
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+
+header nav div ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Microgramma', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+
+}
+
+/* Main */
+main {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+main div {
+  display: inline-block;
+  color: white;
+}
+
+.fotos-intro {
+  text-align: center;
+}
+
+.fotos-intro img {
+  display: flex;
+}
+
+main div img {
+  text-align: center;
+  display: flex;
+  margin: 30px;
+}
+
+
+main div a {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin: 15px;
+}
+
+main div h3 img {
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.links img {
+  display: inline-block;
+}
+
+/* Agrupacion de imagenes y estilos */
+
+.BOX-one {
+  height: 200vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.BOX-two {
+  height: 200vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+
+
+
+/* Estilos de texto */
+h1 {
+  padding: 15px;
+  font-size: 35px;
+  color: blanchedalmond;
+  font-family: 'Geologica', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(133, 180, 222);
+}
+
+p {
+  text-align: center;
+  padding: 30px;
+  color: rgb(219, 226, 232);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+h4 {
+  padding: 50px;
+}
+
+/* Formulario */
+form {
+  padding: 50px;
+  max-width: 1000px;
+  background-color: rgb(0, 0, 0);
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+form #enviar {
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.formulario {
+  margin-top: 150px;
+  height: 70vh;
+}
+
+/* Footer */
+footer {
+  left: 0;
+  bottom: 0;
+  margin: 5rem;
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+}
+
+footer h2 {
+  padding: 20px;
+}
