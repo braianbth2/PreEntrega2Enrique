@@ -26,11 +26,10 @@ body {
 
 /* header */
 
-header {
+header .links-header{
   background-color: rgb(25, 25, 25);
   top: 0px;
   position: sticky;
-  z-index: 2;
 }
 
 
@@ -38,20 +37,19 @@ header nav div {
   display: flex;
   list-style: none;
   color: aliceblue;
-  margin-left: 25px;
-  gap: 100vh;
-  padding-bottom: 5px;
 }
 
 
 
 header nav div ul li {
-  margin: 5px;
-  padding: 15px;
-  display: inline-block;
+  display: flex;
   list-style: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bolder;
+}
+
+header nav .links-header ul li a{
+  display: flex;
 }
 
 
@@ -67,39 +65,30 @@ header nav div ul li a {
 
 /* Main */
 main {
-  padding: 20px;
-  text-align: center;
-  background-color: black;
-  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-main div {
-  display: inline-block;
-  color: white;
+main .foto-main img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.fotos-intro {
-  text-align: center;
-}
-
-.fotos-intro img {
+main .fotos-intro{
   display: flex;
 }
 
-main div img {
-  text-align: center;
+
+main .fotos-intro .columna-uno {
   display: flex;
-  margin: 30px;
+}
+
+main .fotos-intro .columna-dos {
+  display: flex;
 }
 
 
-main div a {
-  display: inline-block;
-  text-align: center;
-  color: white;
-  padding: 15px;
-  margin: 15px;
-}
 
 main div h3 img {
   margin-top: 10px;
@@ -107,9 +96,7 @@ main div h3 img {
   background-color: rgb(0, 0, 0);
 }
 
-.links img {
-  display: inline-block;
-}
+
 
 /* Agrupacion de imagenes y estilos */
 
@@ -182,6 +169,52 @@ form #enviar {
 .formulario {
   margin-top: 150px;
   height: 70vh;
+}
+
+/* media querys */
+
+@media screen and (min-width:1024px){
+  main .fotos-intro {
+    background-color: tomato;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto ;
+
+    grid-template-areas:
+    "TORRE RESTO BENITO"
+    "MONEY WATERMELON GATO";
+    padding: 10px;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  main .fotos-intro .WATERMELON{
+    grid-area: WATERMELON;
+  }
+
+  main .fotos-intro .TORRE{
+    grid-area: TORRE;
+  }
+
+  main .fotos-intro .BENITO{
+    grid-area: BENITO;
+  }
+
+  main .fotos-intro .MONEY{
+    grid-area: MONEY;
+  }
+
+  main .fotos-intro .RESTO{
+    grid-area: RESTO;
+  }
+
+  main .fotos-intro .GATO{
+    grid-area: GATO;
+  }
+
+
+  
 }
 
 /* Footer */

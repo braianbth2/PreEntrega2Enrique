@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- link de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- link de tipografia 1 -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,68 +24,81 @@
 <body>
     <!-- header -->
     <header id="arriba">
-        <nav class="menu">
-            <div>
-                <a href="index.html" class="logo-inicio">
-                    <img src="img/carrero voyage logo.png" alt="Carrero Voyage">
-                </a>
-                <ul>
-                    <li>
-                        <a href="pages/Vision.html">Vision</a>
-                    </li>
-                    <li>
-                        <a href="pages/proyecto.html">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="pages/productos.html">Productos y Servicios</a>
-                    </li>
-                    <li>
-                        <a href="pages/Contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="links-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="logo-inicio" href="index.html">
+                        <img src="img/carrero voyage logo.png" alt="Carrero Voyage">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="Vision" aria-current="page" href="pages/Vision.html">Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Proyectos" href="Proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Productos" href="pages/productos.html">Productos y Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Contacto" href="pages/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     </header>
     <!-- fin de header -->
 
     <!-- inicio main -->
     <main>
-        <div class="links"></div>
-        <div>
+        <div class="fotos"></div>
+        <div class="foto-main">
             <img src="img/SPOT 1.jpg" alt="">
         </div>
         <h1>Carrero Voyage</h1>
         <p>Aurora AudioVisual</p>
         <div class="fotos-intro">
-            <div class="WATERMELON">
-                <img src="img/WATERMELON.jpg" class="img-fluid" alt="WATERMELON">
-                <img src="img/WATERMELON.jpg" alt="WATERMELON">
-            </div>
-            <div class="TORRE">
-                <img src="img/TORRE.jpg" alt="TORRE">
-            </div>
-            <div class="BENITO">
-                <img src="img/BENITO.JPG" alt="BENITO">
-            </div>
-            <div class="MONEY">
-                <img src="img/MONEY.jpg" alt="MONEY">
-            </div>
-            <div class="RESTO">
-                <img src="img/RESTO.JPG" alt="RESTO">
-            </div>
-            <div class="GATO">
-                <img src="img/GATO.jpg" alt="GATO">
-            </div>
+            
+                
+                <div class="TORRE">
+                    <img src="img/TORRE.jpg" alt="TORRE">
+                </div>
+                <div class="RESTO">
+                    <img src="img/RESTO.JPG" alt="RESTO">
+                </div>
+                <div class="BENITO">
+                    <img src="img/BENITO.JPG" alt="BENITO">
+                </div>
+                <div class="MONEY">
+                    <img src="img/MONEY.jpg" alt="MONEY">
+                </div>
+                
+                <div class="WATERMELON">
+                    <img src="img/WATERMELON.jpg" alt="WATERMELON">
+                </div>
+                <div class="GATO">
+                    <img src="img/GATO.jpg" alt="GATO">
+                </div>
+
+            
+
+
         </div>
         <div>
             <figure class="text-end">
                 <blockquote class="blockquote">
-                  <p>A well-known quote, contained in a blockquote element.</p>
+                    <p>A well-known quote, contained in a blockquote element.</p>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
+                    Someone famous in <cite title="Source Title">Source Title</cite>
                 </figcaption>
-              </figure>
+            </figure>
         </div>
 
     </main>
@@ -96,7 +110,11 @@
         <a href="#arriba">Ir Arriba</a>
     </footer>
     <!-- fin de footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
 </body>
 
