@@ -76,17 +76,25 @@ main .foto-main img{
 }
 
 main .fotos-intro{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "TORRE TORRE"
+  "RESTO BENITO"
+  "RESTO BENITO"
+  "MONEY MONEY"
+  "WATERMELON WATERMELON"
+  "GATO GATO";
 }
 
 
-main .fotos-intro .columna-uno {
-  display: flex;
+
+main .fotos-intro img{
+  margin: 5px;
 }
 
-main .fotos-intro .columna-dos {
-  display: flex;
-}
+
 
 
 
@@ -178,6 +186,7 @@ form #enviar {
     background-color: tomato;
     display: grid;
     align-items: center;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto ;
 
