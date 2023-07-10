@@ -22,27 +22,34 @@
 <body>
     <!-- header -->
     <header id="arriba">
-        <nav class="menu">
-            <div>
-                <a href="../index.html" class="logo-inicio">
-                    <img src="../img/carrero voyage logo.png" alt="Carrero Voyage">
-                </a>
-                <ul>
-                    <li>
-                        <a href="Vision.html">Vision</a>
-                    </li>
-                    <li>
-                        <a href="proyecto.html">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="productos.html">Productos y Servicios</a>
-                    </li>
-                    <li>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="links-header">
+            <nav class="navbar navbar-light navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="logo-inicio" href="../index.html">
+                        <img src="../img/carrero voyage logo.png" alt="Carrero Voyage">
+                    </a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu-color" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="Vision" aria-current="page" href="Vision.html">Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Proyectos" href="Proyecto.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Productos" href="productos.html">Productos y Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Contacto" href="Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     </header>
     <!-- fin de header -->
 
@@ -101,6 +108,11 @@
 
     </footer>
     <!-- fin de footer -->
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
 </body>
 

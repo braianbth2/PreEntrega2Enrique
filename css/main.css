@@ -26,10 +26,13 @@ body {
 
 /* header */
 
+header{
+  position: sticky;
+  top: 0;
+}
+
 header .links-header{
   background-color: rgb(25, 25, 25);
-  top: 0px;
-  position: sticky;
 }
 
 
@@ -38,7 +41,6 @@ header nav div {
   list-style: none;
   color: aliceblue;
 }
-
 
 
 header nav div ul li {
@@ -51,6 +53,16 @@ header nav div ul li {
 header nav .links-header ul li a{
   display: flex;
 }
+.custom-toggler ,.navbar-toggler{
+  border-color: aliceblue;
+}
+
+
+header div nav div .menu-color .navbar-nav .nav-item a:hover{
+  color: black;
+  background-color: aliceblue;
+}
+
 
 
 
@@ -67,6 +79,7 @@ header nav div ul li a {
 main {
   display: flex;
   flex-direction: column;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 main .foto-main img{
@@ -165,8 +178,10 @@ form #enviar {
   height: 70vh;
 }
 
-/* media querys */
+/* MEDIA QUERIES */
 
+
+/* media query para celular */
 @media screen and (max-width:575px){
   main .fotos-intro img {
     width: 100%;
@@ -180,8 +195,8 @@ form #enviar {
     width: 100%;
     height: 800px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
   }
 
   .TORRE{
@@ -218,6 +233,8 @@ form #enviar {
   
 
 }
+
+/*media query para computadora */
 
 @media screen and (min-width:1024px){
   
