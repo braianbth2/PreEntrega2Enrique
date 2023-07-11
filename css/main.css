@@ -26,12 +26,12 @@ body {
 
 /* header */
 
-header{
+header {
   position: sticky;
   top: 0;
 }
 
-header .links-header{
+header .links-header {
   background-color: rgb(25, 25, 25);
 }
 
@@ -50,15 +50,17 @@ header nav div ul li {
   font-weight: bolder;
 }
 
-header nav .links-header ul li a{
+header nav .links-header ul li a {
   display: flex;
 }
-.custom-toggler ,.navbar-toggler{
+
+.custom-toggler,
+.navbar-toggler {
   border-color: aliceblue;
 }
 
 
-header div nav div .menu-color .navbar-nav .nav-item a:hover{
+header div nav div .menu-color .navbar-nav .nav-item a:hover {
   color: black;
   background-color: aliceblue;
 }
@@ -77,12 +79,10 @@ header nav div ul li a {
 
 /* Main */
 main {
-  display: flex;
-  flex-direction: column;
   margin: 1rem 1rem 1rem 1rem;
 }
 
-main .foto-main img{
+main .foto-main img {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -106,16 +106,15 @@ main div h3 img {
 /* Agrupacion de imagenes y estilos */
 
 .BOX-one {
-  height: 200vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .BOX-two {
-  height: 200vh;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -140,7 +139,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
+h2 {
   font-size: 15px;
 }
 
@@ -182,14 +181,14 @@ form #enviar {
 
 
 /* media query para celular */
-@media screen and (max-width:575px){
+@media screen and (max-width:575px) {
   main .fotos-intro img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
-  main .fotos-intro{
+
+  main .fotos-intro {
     display: grid;
     padding: 20px 20px 20px 20px;
     width: 100%;
@@ -199,88 +198,160 @@ form #enviar {
     gap: 10px;
   }
 
-  .TORRE{
-    grid-column:span 1;
+  .TORRE {
+    grid-column: span 1;
     grid-row: span 2;
   }
 
-  main .fotos-intro .RESTO{
+  main .fotos-intro .RESTO {
     grid-column: span 2;
     grid-row: span 2;
   }
-  
-  main .fotos-intro .BENITO{
+
+  main .fotos-intro .BENITO {
     grid-column: span 2;
     grid-row: span 2;
 
   }
 
-  .MONEY{
+  .MONEY {
     grid-column: span 3;
     grid-row: 1;
   }
 
-  .WATERMELON{
+  .WATERMELON {
     grid-column: 1 / 1;
   }
 
-  .GATO{
+  .GATO {
     grid-column: span 2;
   }
 
+  
+  /* pagina vision */
 
+  main h2{
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px;
+  }
   
+  main{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  main .BOX-one img{
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr);
+  }
   
+  main .BOX-two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+
+
+
 
 }
 
 /*media query para computadora */
 
-@media screen and (min-width:1024px){
-  
-  
-  main .fotos-intro {
-    background-color: tomato;
+@media screen and (min-width:1024px) {
+
+  .logo-inicio {
+    padding-right: 50%;
+  }
+
+  header .navbar-nav .nav-item a {
+    display: inline-block;
+    justify-content: space-between;
+    padding-right: 1rem;
+
+  }
+
+  main .fotos-intro{
     display: grid;
-    align-items: center;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto ;
-
-    grid-template-areas:
-    "TORRE RESTO BENITO"
-    "MONEY WATERMELON GATO";
-    padding: 10px;
-    align-items: center;
     gap: 1rem;
+    grid-template-rows: 40% 40% 20%;
   }
 
-  main .fotos-intro .WATERMELON{
-    grid-area: WATERMELON;
+  main .RESTO img, main .WATERMELON img{
+    display: block;
   }
 
-  main .fotos-intro .TORRE{
-    grid-area: TORRE;
+  main .fotos-intro div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  main .fotos-intro .BENITO{
-    grid-area: BENITO;
+  main .TORRE, main .BENITO{
+    grid-row: span 2;
   }
 
-  main .fotos-intro .MONEY{
-    grid-area: MONEY;
-  }
-
-  main .fotos-intro .RESTO{
-    grid-area: RESTO;
-  }
-
-  main .fotos-intro .GATO{
-    grid-area: GATO;
+  main .RESTO, main .WATERMELON {
+    grid-column: span 1;
   }
 
 
+  main .MONEY{
+    grid-column: span 3;
+  }
+
+  main .fotos-intro .GATO {
+    display: none;
+  }
+
+  /* pagina vision */
+
+  main h2{
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px;
+  }
   
+  main{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  main .BOX-one img{
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  main .BOX-two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+
+
+
 }
 
 /* Footer */
