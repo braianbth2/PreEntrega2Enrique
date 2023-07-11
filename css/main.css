@@ -78,22 +78,12 @@ header nav div ul li a {
 }
 
 /* Main */
-main {
-  margin: 1rem 1rem 1rem 1rem;
-}
+
 
 main .foto-main img {
-  display: flex;
   justify-content: center;
   width: 100%;
 }
-
-
-
-
-
-
-
 
 main div h3 img {
   margin-top: 10px;
@@ -227,23 +217,27 @@ form #enviar {
     grid-column: span 2;
   }
 
-  
+
   /* pagina vision */
 
-  main h2{
+  main h2 {
     color: darkgrey;
     text-align: center;
     margin-top: 15px;
   }
-  
-  main{
+
+  main {
+    width: 575px;
+  }
+
+  main .galaxia img {
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding: 15px 15px 15px 15px;
   }
 
 
-  main .BOX-one img{
+  main .BOX-one img {
     display: grid;
     padding: 20px 20px 20px 20px;
     width: 100%;
@@ -251,8 +245,8 @@ form #enviar {
     object-fit: cover;
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  main .BOX-two img{
+
+  main .BOX-two img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -282,14 +276,16 @@ form #enviar {
 
   }
 
-  main .fotos-intro{
+  main .fotos-intro {
+    margin: 15px 15px 15px 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 20px;
     grid-template-rows: 40% 40% 20%;
   }
 
-  main .RESTO img, main .WATERMELON img{
+  main .RESTO img,
+  main .WATERMELON img {
     display: block;
   }
 
@@ -299,16 +295,18 @@ form #enviar {
     object-fit: cover;
   }
 
-  main .TORRE, main .BENITO{
+  main .TORRE,
+  main .BENITO {
     grid-row: span 2;
   }
 
-  main .RESTO, main .WATERMELON {
+  main .RESTO,
+  main .WATERMELON {
     grid-column: span 1;
   }
 
 
-  main .MONEY{
+  main .MONEY {
     grid-column: span 3;
   }
 
@@ -318,20 +316,26 @@ form #enviar {
 
   /* pagina vision */
 
-  main h2{
+  main h2 {
     color: darkgrey;
     text-align: center;
     margin-top: 15px;
   }
-  
-  main{
+
+  main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    justify-content: center;
+  }
+
+  main .galaxia img {
+    justify-content: center;
+    width: 100%;
   }
 
 
-  main .BOX-one img{
+  main .BOX-one img {
     display: grid;
     padding: 20px 20px 20px 20px;
     width: 100%;
@@ -339,16 +343,17 @@ form #enviar {
     object-fit: cover;
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  main .BOX-two img{
+
+  main .BOX-two img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: grid;
+    padding: 20px 20px 20px 20px;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
-  
+
 
 
 
