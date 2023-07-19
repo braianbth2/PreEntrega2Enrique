@@ -1,0 +1,29 @@
+//inicio de reset 
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos generales */
+
+body{
+   background-color: black; 
+}
+
+/* fuente externa para header */
+
+@font-face{
+    font-family: 'Microgramma';
+    src: url(../fonts/Microgramma.ttf) format(truetype);
+}
+
+/* header */
+
+header{
+    position: sticky;
+    top: 0;
+}
