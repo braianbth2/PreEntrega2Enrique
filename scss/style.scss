@@ -2,7 +2,7 @@
 
 /* reset */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,20 +10,239 @@
 
 /*Estilos generales */
 
-body{
-   background-color: black; 
+body {
+    background-color: black;
 }
 
 /* fuente externa para header */
 
-@font-face{
+@font-face {
     font-family: 'Microgramma';
     src: url(../fonts/Microgramma.ttf) format(truetype);
 }
 
+
+//inicio de header
 /* header */
 
-header{
+header {
     position: sticky;
     top: 0;
+    background-color: rgb(25, 25, 25);
+
+    div {
+        nav {
+            div {
+                display: flex;
+                list-style: none;
+                color: aliceblue;
+
+                a{
+                    img{
+                        width: 5vh;
+                    }
+                }
+
+                .custom-tooggler,
+                .navbar-toggler {
+                    border-color: aliceblue;
+                }
+
+                .menu-color {
+                    .navbar-nav {
+                        .nav-item {
+                            a:hover {
+                                color: black;
+                                background-color: aliceblue;
+                                justify-content: center;
+                            }
+                        }
+
+                    }
+
+                }
+
+                ul {
+                    li {
+                        display: flex;
+                        list-style: none;
+                        font-size: 15px;
+                        font-weight: bolder;
+
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+// Main
+main {
+    .foto-main img {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    div h3 img {
+      margin-top: 10px;
+      text-align: center;
+      background-color: rgb(0, 0, 0);
+    }
+  
+    // divisor de cajas
+    /* divisor con display grid */
+    .BOX-one {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .BOX-two {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+  
+    // Jerarquias de texto
+    /* titulos y parrafos */
+
+    h1 {
+      text-align: center;
+      padding: 15px;
+      font-size: 35px;
+      color: blanchedalmond;
+      font-family: 'Geologica', sans-serif;
+    }
+  
+    p {
+      text-align: center;
+      padding: 30px;
+      color: rgb(219, 226, 232);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    h2 {
+      font-size: 15px;
+    }
+  
+    h3 {
+      text-align: center;
+      font-size: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: aliceblue;
+    }
+  
+    h4 {
+      padding: 50px;
+    }
+  
+    // Formulario
+    form {
+      padding: 50px;
+      max-width: 1000px;
+      background-color: rgb(0, 0, 0);
+  
+      input,
+      textarea {
+        width: 100%;
+      }
+  
+      #enviar {
+        background-color: rgb(255, 255, 255);
+        font-size: 30px;
+      }
+    }
+  
+    .formulario {
+      margin-top: 150px;
+      height: 70vh;
+    }
+  }
+
+  // MEDIA QUERIES
+
+// media query para celular
+@media screen and (max-width: 575px) {
+
+    main {
+      align-items: center;
+      padding: 20px;
+      
+      .fotos-intro img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .fotos-intro {
+        display: grid;
+        width: 100%;
+        height: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+        
+        .TORRE {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+  
+        .RESTO {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+  
+        .BENITO {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+  
+        .MONEY {
+          grid-column: span 3;
+          grid-row: 1;
+        }
+  
+        .WATERMELON {
+          grid-column: 1 / 1;
+        }
+  
+        .GATO {
+          grid-column: span 2;
+        }
+      }
+  
+      // pagina vision
+      h2 {
+        color: darkgrey;
+        text-align: center;
+        margin-top: 15px;
+      }
+  
+      .galaxia img {
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+      }
+  
+      .BOX-one img {
+        display: grid;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      .BOX-two img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+    }
+  }
