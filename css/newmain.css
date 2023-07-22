@@ -1,0 +1,138 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos generales */
+body {
+  background-color: black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fuente externa para header */
+@font-face {
+  font-family: 'Microgramma';
+  src: url(../fonts/Microgramma.ttf) format(truetype);
+}
+
+/* header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #191919;
+}
+
+header div nav div {
+  display: flex;
+  list-style: none;
+  color: aliceblue;
+}
+
+header div nav div a img {
+  width: 5vh;
+}
+
+header div nav div .custom-tooggler,
+header div nav div .navbar-toggler {
+  border-color: aliceblue;
+}
+
+header div nav div .menu-color .navbar-nav .nav-item a:hover {
+  color: black;
+  background-color: aliceblue;
+  justify-content: center;
+}
+
+header div nav div ul li {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 575px) {
+  main {
+    align-items: center;
+    padding: 20px;
+  }
+
+  main .fotos-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main .fotos-intro {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+  }
+
+  main .fotos-intro .TORRE {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  main .fotos-intro .RESTO {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  main .fotos-intro .BENITO {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  main .fotos-intro .MONEY {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+
+  main .fotos-intro .WATERMELON {
+    grid-column: 1 / 1;
+  }
+
+  main .fotos-intro .GATO {
+    grid-column: span 2;
+  }
+
+  main h2 {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  main .galaxia img {
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  main .BOX-one img {
+    display: grid;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main .BOX-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
