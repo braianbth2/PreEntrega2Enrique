@@ -12,7 +12,10 @@
 
 body {
   background-color: black;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* fuente externa para header */
 
@@ -29,31 +32,28 @@ header {
   background-color: rgb(25, 25, 25);
 
   .links-header {
-    display: flex;
     list-style: none;
     color: aliceblue;
 
     nav {
       .container-fluid {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+        justify-content: space-between;
+        gap: 25vw;
 
-      .logo-inicio {
-        img {
-          width: 6rem;
+        .logo-inicio {
+          img {
+            width: 6rem;
+          }
         }
-      }
 
-      button {
-        border-color: aliceblue;
       }
 
       .collapse {
         ul {
+          gap: 5px;
+          justify-content: center;
+
           li {
-            display: flex;
             list-style: none;
             font-size: 15px;
             font-weight: bolder;
@@ -66,6 +66,7 @@ header {
             }
 
             a:hover {
+              color: black;
               background-color: whitesmoke;
             }
           }
@@ -74,6 +75,7 @@ header {
     }
   }
 }
+
 
 
 // Main
@@ -160,103 +162,256 @@ main {
 // MEDIA QUERIES
 
 // media query para celular
+
+/* mq smartphone */
+
 @media screen and (min-width: 320px) and (max-width: 575px) {
 
-  main {
+  body {
+    background-color: black;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+  }
 
-    .fotos-intro img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(25, 25, 25);
 
-    .fotos-intro {
-      display: grid;
-      width: 100%;
-      height: 800px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: minmax(100px, auto);
-      gap: 10px;
+    .links-header {
+      list-style: none;
+      color: aliceblue;
 
-      .TORRE {
-        grid-column: span 1;
-        grid-row: span 2;
+      nav {
+        justify-content: space-between;
+
+        .container-fluid {
+          justify-content: space-between;
+
+          .logo-inicio {
+            img {
+              width: 6rem;
+            }
+          }
+
+        }
+
+        button {
+          border-color: aliceblue;
+
+          .navbar-toggler-icon {
+            background-color: rgb(15, 15, 15);
+          }
+        }
+
+        .collapse {
+          ul {
+            li {
+              list-style: none;
+              font-size: 15px;
+              font-weight: bolder;
+
+              a {
+                font-family: 'Microgramma', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: aliceblue;
+              }
+
+              a:hover {
+                color: black;
+                background-color: whitesmoke;
+              }
+            }
+          }
+        }
       }
-
-      .RESTO {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-
-      .BENITO {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-
-      .MONEY {
-        grid-column: span 3;
-        grid-row: 1;
-      }
-
-      .WATERMELON {
-        grid-column: 1 / 1;
-      }
-
-      .GATO {
-        grid-column: span 2;
-      }
-    }
-
-    // pagina vision
-    h2 {
-      color: darkgrey;
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .galaxia img {
-      justify-content: center;
-      width: 100%;
-      padding: 15px;
-    }
-
-    .BOX-one img {
-      display: grid;
-      padding: 20px;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .BOX-two img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: grid;
-      padding: 20px;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
     }
   }
 }
 
+
+main {
+  align-items: center;
+  padding: 20px;
+
+  .aurora {
+    p {
+      font-family: 'Microgramma', sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+  }
+
+  .foto-main {
+    display: none;
+  }
+
+  .fotos-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fotos-intro {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+
+    .TORRE {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .RESTO {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .BENITO {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .MONEY {
+      grid-column: span 3;
+      grid-row: 1;
+    }
+
+    .WATERMELON {
+      grid-column: 1 / 1;
+    }
+
+    .GATO {
+      grid-column: span 2;
+    }
+
+  }
+
+  // pagina vision
+  h2 {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .galaxia img {
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .BOX-one img {
+    display: grid;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .BOX-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+
+
+// media query tablet
+
+/* media query tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  // Utilizamos display: grid para organizar los elementos en una cuadrícula
+
+
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+
+    .links-header {
+      list-style: none;
+      color: aliceblue;
+
+      nav {
+        .container-fluid {
+          justify-content: space-between;
+          gap: 25vw;
+
+          .logo-inicio {
+            img {
+              width: 6rem;
+            }
+          }
+
+        }
+
+        .collapse {
+          ul {
+            gap: 5px;
+            justify-content: center;
+
+            li {
+              list-style: none;
+              font-size: 15px;
+              font-weight: bolder;
+
+              a {
+                font-family: 'Microgramma', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: aliceblue;
+              }
+
+              a:hover {
+                color: black;
+                background-color: whitesmoke;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
 /*media query para computadora */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
 
 
   header {
     div {
       nav {
-        div {
-          gap: 300px;
-          .navbar-nav {
-            .nav-item a {
-              display: inline-block;
-              justify-content: space-between;
-              padding-right: 1rem;
+        .container-fluid {
+
+          justify-content: space-between;
+          gap: 35vw;
+
+          .collapse {
+            .navbar-nav {
+              .nav-item {
+                a {
+                  display: inline-block;
+                  justify-content: space-between;
+                  padding-right: 1rem;
+                }
+              }
             }
           }
         }
@@ -265,12 +420,16 @@ main {
   }
 
   main {
+    .foto-main {
+      display: block;
+    }
+
     .fotos-intro {
-      margin: 15px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      grid-template-rows: 40% 40% 20%;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      grid-template-rows: 25% 25% 25% 30%;
+      margin-bottom: 100px;
 
       div {
         img {
@@ -280,14 +439,21 @@ main {
         }
       }
 
-      .TORRE,
+      .TORRE {
+        grid-row: span 3;
+      }
+
+
       .BENITO {
         grid-row: span 2;
       }
 
-      .RESTO,
-      .WATERMELON {
+      .RESTO {
         grid-column: span 1;
+      }
+
+      .WATERMELON {
+        grid-column: span 4;
       }
 
       .MONEY {
@@ -323,6 +489,7 @@ main {
       }
     }
 
+
     .BOX-two {
       img {
         width: 100%;
@@ -335,4 +502,19 @@ main {
       }
     }
   }
+}
+
+/* Footer */
+footer {
+  left: 0;
+  bottom: 0;
+  margin: 5rem;
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+
+  h2 {
+    padding: 20px;
+  }
+
 }
