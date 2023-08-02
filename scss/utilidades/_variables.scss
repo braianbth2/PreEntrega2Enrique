@@ -1,4 +1,18 @@
 //variables
 //estilos de texto
 
+@font-face {
+    font-family: 'Microgramma';
+    src: url(../fonts/microgramma.ttf) format(truetype);
+  }
+
 $fuente-principal: 'Microgramma', sans-serif;
+
+//tamaños de pantalla
+
+$min-screen-sm: 320px;
+$max-screen-sm: 768px;
+$min-screen-md: 769px;
+$max-screen-md: 1024px;
+$min-screen-lg: 1025px;
+$max-screen-lg: 1440px;

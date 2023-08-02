@@ -1,0 +1,319 @@
+//pagina index
+@import "../utilidades/variables";
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+
+
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+
+    .links-header {
+      list-style: none;
+      color: aliceblue;
+
+      nav {
+        justify-content: space-between;
+
+        .container-fluid {
+          justify-content: space-between;
+
+          .logo-inicio {
+            img {
+              width: 6rem;
+            }
+          }
+
+        }
+
+        button {
+          border-color: aliceblue;
+        }
+
+        .collapse {
+          ul {
+            li {
+              list-style: none;
+              font-size: 15px;
+              font-weight: bolder;
+
+              a {
+                font-family: $fuente-principal;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: aliceblue;
+              }
+
+              a:hover {
+                color: black;
+                background-color: whitesmoke;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+main {
+  align-items: center;
+  padding: 20px;
+
+  .carrerovoyage {
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .aurora {
+    p {
+      font-family: $fuente-principal;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px;
+    }
+  }
+
+  .foto-main {
+    display: none;
+  }
+
+  .fotos-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fotos-intro {
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+
+    .TORRE {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .RESTO {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .BENITO {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .MONEY {
+      grid-column: span 3;
+      grid-row: 1;
+    }
+
+    .WATERMELON {
+      grid-column: 1 / 1;
+    }
+
+    .GATO {
+      grid-column: span 2;
+    }
+
+  }
+}
+
+// media query tablet
+
+/* media query tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+
+    .links-header {
+      list-style: none;
+      color: aliceblue;
+
+      nav {
+        .container-fluid {
+          justify-content: space-between;
+          gap: 25vw;
+
+          .logo-inicio {
+            img {
+              width: 6rem;
+            }
+          }
+
+        }
+
+        .collapse {
+          ul {
+            gap: 5px;
+            justify-content: center;
+
+            li {
+              list-style: none;
+              font-size: 15px;
+              font-weight: bolder;
+
+              a {
+                font-family: 'Microgramma', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: aliceblue;
+                white-space: nowrap;
+              }
+
+              a:hover {
+                color: black;
+                background-color: whitesmoke;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*media query para computadora */
+@media screen and (min-width: 1024px) {
+
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(25, 25, 25);
+
+    .links-header {
+      nav {
+        justify-content: space-between;
+
+        .container-fluid {
+
+          justify-content: space-between;
+          gap: 40vw;
+
+          .logo-inicio {
+            img {
+              width: 6rem;
+            }
+          }
+
+          .collapse {
+            ul {
+              gap: 15px;
+
+              li {
+                list-style: none;
+                font-size: 15px;
+                font-weight: bolder;
+
+                a {
+                  font-family: $fuente-principal;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  color: aliceblue;
+                  white-space: nowrap;
+                }
+
+                a:hover {
+                  color: black;
+                  background-color: whitesmoke;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+
+    .carrerovoyage {
+      display: grid;
+      justify-items: center;
+
+      h1 {
+        display: none;
+      }
+
+
+      img {
+        display: block;
+        width: 50%;
+
+      }
+
+
+    }
+
+
+    .foto-main {
+      display: block;
+      padding: 50px;
+    }
+
+    .fotos-intro {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      grid-template-rows: 25% 25% 25% 30%;
+      margin-bottom: 100px;
+
+      div {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .TORRE {
+        grid-row: span 3;
+      }
+
+
+      .BENITO {
+        grid-row: span 2;
+      }
+
+      .RESTO {
+        grid-column: span 1;
+      }
+
+      .WATERMELON {
+        grid-column: span 4;
+      }
+
+      .MONEY {
+        grid-column: span 3;
+      }
+
+      .GATO {
+        display: none;
+      }
+    }
+  }
+}
