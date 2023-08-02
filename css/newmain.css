@@ -4,10 +4,17 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
 @font-face {
   font-family: 'Microgramma';
   src: url(../fonts/microgramma.ttf) format(truetype); }
 
+/* media query para celular */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   /* header */
   header {
@@ -36,49 +43,48 @@
             color: aliceblue; }
           header .links-header nav .collapse ul li a:hover {
             color: black;
-            background-color: whitesmoke; } }
-
-main {
-  align-items: center;
-  padding: 20px; }
-  main .carrerovoyage img {
-    width: 100%; }
-  main .carrerovoyage h1 {
-    display: none; }
-  main .aurora p {
-    font-family: "Microgramma", sans-serif;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 25px; }
-  main .foto-main {
-    display: none; }
-  main .fotos-intro img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  main .fotos-intro {
-    display: grid;
-    width: 100%;
-    height: 800px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    gap: 10px; }
-    main .fotos-intro .TORRE {
-      grid-column: span 1;
-      grid-row: span 2; }
-    main .fotos-intro .RESTO {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main .fotos-intro .BENITO {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main .fotos-intro .MONEY {
-      grid-column: span 3;
-      grid-row: 1; }
-    main .fotos-intro .WATERMELON {
-      grid-column: 1 / 1; }
-    main .fotos-intro .GATO {
-      grid-column: span 2; }
+            background-color: whitesmoke; }
+  main {
+    align-items: center;
+    padding: 20px; }
+    main .carrerovoyage img {
+      width: 100%; }
+    main .carrerovoyage h1 {
+      display: none; }
+    main .aurora p {
+      font-family: "Microgramma", sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px; }
+    main .foto-main {
+      display: none; }
+    main .fotos-intro img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .fotos-intro {
+      display: grid;
+      width: 100%;
+      height: 800px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px; }
+      main .fotos-intro .TORRE {
+        grid-column: span 1;
+        grid-row: span 2; }
+      main .fotos-intro .RESTO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .BENITO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .MONEY {
+        grid-column: span 3;
+        grid-row: 1; }
+      main .fotos-intro .WATERMELON {
+        grid-column: 1 / 1; }
+      main .fotos-intro .GATO {
+        grid-column: span 2; } }
 
 /* media query tablet */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -110,7 +116,48 @@ main {
             white-space: nowrap; }
           header .links-header nav .collapse ul li a:hover {
             color: black;
-            background-color: whitesmoke; } }
+            background-color: whitesmoke; }
+  main {
+    align-items: center;
+    padding: 20px; }
+    main .carrerovoyage img {
+      width: 100%; }
+    main .carrerovoyage h1 {
+      display: none; }
+    main .aurora p {
+      font-family: "Microgramma", sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px; }
+    main .foto-main {
+      display: none; }
+    main .fotos-intro img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .fotos-intro {
+      display: grid;
+      width: 100%;
+      height: 800px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px; }
+      main .fotos-intro .TORRE {
+        grid-column: span 1;
+        grid-row: span 2; }
+      main .fotos-intro .RESTO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .BENITO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .MONEY {
+        grid-column: span 3;
+        grid-row: 1; }
+      main .fotos-intro .WATERMELON {
+        grid-column: 1 / 1; }
+      main .fotos-intro .GATO {
+        grid-column: span 2; } }
 
 /*media query para computadora */
 @media screen and (min-width: 1024px) {
@@ -174,11 +221,304 @@ main {
     main .fotos-intro .GATO {
       display: none; } }
 
-body {
-  background-color: black;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
+@font-face {
+  font-family: 'Microgramma';
+  src: url(../fonts/microgramma.ttf) format(truetype); }
+
+@font-face {
+  font-family: 'Microgramma';
+  src: url(../fonts/microgramma.ttf) format(truetype); }
+
+/* media query para celular */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #191919; }
+    header .links-header {
+      list-style: none;
+      color: aliceblue; }
+      header .links-header nav {
+        justify-content: space-between; }
+        header .links-header nav .container-fluid {
+          justify-content: space-between; }
+          header .links-header nav .container-fluid .logo-inicio img {
+            width: 6rem; }
+        header .links-header nav button {
+          border-color: aliceblue; }
+        header .links-header nav .collapse ul li {
+          list-style: none;
+          font-size: 15px;
+          font-weight: bolder; }
+          header .links-header nav .collapse ul li a {
+            font-family: "Microgramma", sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: aliceblue; }
+          header .links-header nav .collapse ul li a:hover {
+            color: black;
+            background-color: whitesmoke; }
+  main {
+    align-items: center;
+    padding: 20px; }
+    main .carrerovoyage img {
+      width: 100%; }
+    main .carrerovoyage h1 {
+      display: none; }
+    main .aurora p {
+      font-family: "Microgramma", sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px; }
+    main .foto-main {
+      display: none; }
+    main .fotos-intro img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .fotos-intro {
+      display: grid;
+      width: 100%;
+      height: 800px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px; }
+      main .fotos-intro .TORRE {
+        grid-column: span 1;
+        grid-row: span 2; }
+      main .fotos-intro .RESTO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .BENITO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .MONEY {
+        grid-column: span 3;
+        grid-row: 1; }
+      main .fotos-intro .WATERMELON {
+        grid-column: 1 / 1; }
+      main .fotos-intro .GATO {
+        grid-column: span 2; } }
+
+/* media query tablet */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #191919; }
+    header .links-header {
+      list-style: none;
+      color: aliceblue; }
+      header .links-header nav .container-fluid {
+        justify-content: space-between;
+        gap: 25vw; }
+        header .links-header nav .container-fluid .logo-inicio img {
+          width: 6rem; }
+      header .links-header nav .collapse ul {
+        gap: 5px;
+        justify-content: center; }
+        header .links-header nav .collapse ul li {
+          list-style: none;
+          font-size: 15px;
+          font-weight: bolder; }
+          header .links-header nav .collapse ul li a {
+            font-family: 'Microgramma', sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: aliceblue;
+            white-space: nowrap; }
+          header .links-header nav .collapse ul li a:hover {
+            color: black;
+            background-color: whitesmoke; }
+  main {
+    align-items: center;
+    padding: 20px; }
+    main .carrerovoyage img {
+      width: 100%; }
+    main .carrerovoyage h1 {
+      display: none; }
+    main .aurora p {
+      font-family: "Microgramma", sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px; }
+    main .foto-main {
+      display: none; }
+    main .fotos-intro img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .fotos-intro {
+      display: grid;
+      width: 100%;
+      height: 800px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px; }
+      main .fotos-intro .TORRE {
+        grid-column: span 1;
+        grid-row: span 2; }
+      main .fotos-intro .RESTO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .BENITO {
+        grid-column: span 2;
+        grid-row: span 2; }
+      main .fotos-intro .MONEY {
+        grid-column: span 3;
+        grid-row: 1; }
+      main .fotos-intro .WATERMELON {
+        grid-column: 1 / 1; }
+      main .fotos-intro .GATO {
+        grid-column: span 2; } }
+
+/*media query para computadora */
+@media screen and (min-width: 1024px) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #191919; }
+    header .links-header nav {
+      justify-content: space-between; }
+      header .links-header nav .container-fluid {
+        justify-content: space-between;
+        gap: 40vw; }
+        header .links-header nav .container-fluid .logo-inicio img {
+          width: 6rem; }
+        header .links-header nav .container-fluid .collapse ul {
+          gap: 15px; }
+          header .links-header nav .container-fluid .collapse ul li {
+            list-style: none;
+            font-size: 15px;
+            font-weight: bolder; }
+            header .links-header nav .container-fluid .collapse ul li a {
+              font-family: "Microgramma", sans-serif;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: aliceblue;
+              white-space: nowrap; }
+            header .links-header nav .container-fluid .collapse ul li a:hover {
+              color: black;
+              background-color: whitesmoke; }
+  main .carrerovoyage {
+    display: grid;
+    justify-items: center; }
+    main .carrerovoyage h1 {
+      display: none; }
+    main .carrerovoyage img {
+      display: block;
+      width: 50%; }
+  main .foto-main {
+    display: block;
+    padding: 50px; }
+  main .fotos-intro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    grid-template-rows: 25% 25% 25% 30%;
+    margin-bottom: 100px; }
+    main .fotos-intro div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .fotos-intro .TORRE {
+      grid-row: span 3; }
+    main .fotos-intro .BENITO {
+      grid-row: span 2; }
+    main .fotos-intro .RESTO {
+      grid-column: span 1; }
+    main .fotos-intro .WATERMELON {
+      grid-column: span 4; }
+    main .fotos-intro .MONEY {
+      grid-column: span 3; }
+    main .fotos-intro .GATO {
+      display: none; } }
+
+@font-face {
+  font-family: 'Microgramma';
+  src: url(../fonts/microgramma.ttf) format(truetype); }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #191919; }
+    header .links-header {
+      list-style: none;
+      color: aliceblue; }
+      header .links-header nav {
+        justify-content: space-between; }
+        header .links-header nav .container-fluid {
+          justify-content: space-between; }
+          header .links-header nav .container-fluid .logo-inicio img {
+            width: 6rem; }
+        header .links-header nav button {
+          border-color: aliceblue; }
+        header .links-header nav .collapse ul li {
+          list-style: none;
+          font-size: 15px;
+          font-weight: bolder; }
+          header .links-header nav .collapse ul li a {
+            font-family: "Microgramma", sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: aliceblue; }
+          header .links-header nav .collapse ul li a:hover {
+            color: black;
+            background-color: whitesmoke; }
+  h2 {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px; }
+  .galaxia img {
+    justify-content: center;
+    width: 100%;
+    padding: 15px; }
+  .BOX-one img {
+    display: grid;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr); }
+  .BOX-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; } }
+
+/* media query para computadora */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /* pagina vision */
+  h2 {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px; }
+  .galaxia img {
+    justify-content: center;
+    width: 100%;
+    padding: 15px; }
+  .BOX-one img {
+    display: grid;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-template-columns: repeat(3, 1fr); }
+  .BOX-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; } }
 
 main .foto-main img {
   justify-content: center;
@@ -239,230 +579,6 @@ main form {
 main .formulario {
   margin-top: 150px;
   height: 70vh; }
-
-@font-face {
-  font-family: 'Microgramma';
-  src: url(../fonts/microgramma.ttf) format(truetype); }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  /* header */
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #191919; }
-    header .links-header {
-      list-style: none;
-      color: aliceblue; }
-      header .links-header nav {
-        justify-content: space-between; }
-        header .links-header nav .container-fluid {
-          justify-content: space-between; }
-          header .links-header nav .container-fluid .logo-inicio img {
-            width: 6rem; }
-        header .links-header nav button {
-          border-color: aliceblue; }
-        header .links-header nav .collapse ul li {
-          list-style: none;
-          font-size: 15px;
-          font-weight: bolder; }
-          header .links-header nav .collapse ul li a {
-            font-family: "Microgramma", sans-serif;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: aliceblue; }
-          header .links-header nav .collapse ul li a:hover {
-            color: black;
-            background-color: whitesmoke; } }
-
-main {
-  align-items: center;
-  padding: 20px; }
-  main .carrerovoyage img {
-    width: 100%; }
-  main .carrerovoyage h1 {
-    display: none; }
-  main .aurora p {
-    font-family: "Microgramma", sans-serif;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 25px; }
-  main .foto-main {
-    display: none; }
-  main .fotos-intro img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  main .fotos-intro {
-    display: grid;
-    width: 100%;
-    height: 800px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    gap: 10px; }
-    main .fotos-intro .TORRE {
-      grid-column: span 1;
-      grid-row: span 2; }
-    main .fotos-intro .RESTO {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main .fotos-intro .BENITO {
-      grid-column: span 2;
-      grid-row: span 2; }
-    main .fotos-intro .MONEY {
-      grid-column: span 3;
-      grid-row: 1; }
-    main .fotos-intro .WATERMELON {
-      grid-column: 1 / 1; }
-    main .fotos-intro .GATO {
-      grid-column: span 2; }
-
-/* media query tablet */
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  /* header */
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #191919; }
-    header .links-header {
-      list-style: none;
-      color: aliceblue; }
-      header .links-header nav .container-fluid {
-        justify-content: space-between;
-        gap: 25vw; }
-        header .links-header nav .container-fluid .logo-inicio img {
-          width: 6rem; }
-      header .links-header nav .collapse ul {
-        gap: 5px;
-        justify-content: center; }
-        header .links-header nav .collapse ul li {
-          list-style: none;
-          font-size: 15px;
-          font-weight: bolder; }
-          header .links-header nav .collapse ul li a {
-            font-family: 'Microgramma', sans-serif;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: aliceblue;
-            white-space: nowrap; }
-          header .links-header nav .collapse ul li a:hover {
-            color: black;
-            background-color: whitesmoke; } }
-
-/*media query para computadora */
-@media screen and (min-width: 1024px) {
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #191919; }
-    header .links-header nav {
-      justify-content: space-between; }
-      header .links-header nav .container-fluid {
-        justify-content: space-between;
-        gap: 40vw; }
-        header .links-header nav .container-fluid .logo-inicio img {
-          width: 6rem; }
-        header .links-header nav .container-fluid .collapse ul {
-          gap: 15px; }
-          header .links-header nav .container-fluid .collapse ul li {
-            list-style: none;
-            font-size: 15px;
-            font-weight: bolder; }
-            header .links-header nav .container-fluid .collapse ul li a {
-              font-family: "Microgramma", sans-serif;
-              text-transform: uppercase;
-              text-decoration: none;
-              color: aliceblue;
-              white-space: nowrap; }
-            header .links-header nav .container-fluid .collapse ul li a:hover {
-              color: black;
-              background-color: whitesmoke; }
-  main .carrerovoyage {
-    display: grid;
-    justify-items: center; }
-    main .carrerovoyage h1 {
-      display: none; }
-    main .carrerovoyage img {
-      display: block;
-      width: 50%; }
-  main .foto-main {
-    display: block;
-    padding: 50px; }
-  main .fotos-intro {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    grid-template-rows: 25% 25% 25% 30%;
-    margin-bottom: 100px; }
-    main .fotos-intro div img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    main .fotos-intro .TORRE {
-      grid-row: span 3; }
-    main .fotos-intro .BENITO {
-      grid-row: span 2; }
-    main .fotos-intro .RESTO {
-      grid-column: span 1; }
-    main .fotos-intro .WATERMELON {
-      grid-column: span 4; }
-    main .fotos-intro .MONEY {
-      grid-column: span 3; }
-    main .fotos-intro .GATO {
-      display: none; } }
-
-h2 {
-  color: darkgrey;
-  text-align: center;
-  margin-top: 15px; }
-
-.galaxia img {
-  justify-content: center;
-  width: 100%;
-  padding: 15px; }
-
-.BOX-one img {
-  display: grid;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  grid-template-columns: repeat(3, 1fr); }
-
-.BOX-two img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: grid;
-  padding: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px; }
-
-/*media query para computadora */
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  /* pagina vision */
-  h2 {
-    color: darkgrey;
-    text-align: center;
-    margin-top: 15px; }
-  .galaxia img {
-    justify-content: center;
-    width: 100%;
-    padding: 15px; }
-  .BOX-one img {
-    display: grid;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-template-columns: repeat(3, 1fr); }
-  .BOX-two img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px; } }
 
 /* Footer */
 footer {

@@ -1,1 +1,135 @@
 @import "../utilidades/variables";
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+
+
+    /* header */
+    header {
+        position: sticky;
+        top: 0;
+        background-color: rgb(25, 25, 25);
+
+        .links-header {
+            list-style: none;
+            color: aliceblue;
+
+            nav {
+                justify-content: space-between;
+
+                .container-fluid {
+                    justify-content: space-between;
+
+                    .logo-inicio {
+                        img {
+                            width: 6rem;
+                        }
+                    }
+
+                }
+
+                button {
+                    border-color: aliceblue;
+                }
+
+                .collapse {
+                    ul {
+                        li {
+                            list-style: none;
+                            font-size: 15px;
+                            font-weight: bolder;
+
+                            a {
+                                font-family: $fuente-principal;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                color: aliceblue;
+                            }
+
+                            a:hover {
+                                color: black;
+                                background-color: whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // pagina vision
+    h2 {
+        color: darkgrey;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .galaxia img {
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .BOX-one img {
+        display: grid;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .BOX-two img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+/* media query para computadora */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+
+
+  /* pagina vision */
+  h2 {
+    color: darkgrey;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .galaxia img {
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .BOX-one {
+    img {
+      display: grid;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+  .BOX-two {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: grid;
+      padding: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+  }
+}
