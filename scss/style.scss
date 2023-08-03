@@ -1,3 +1,9 @@
+@import "utilidades/variables";
+@import "media/media";
+@import "html/index";
+@import "html/vision";
+
+
 //inicio de reset 
 
 /* reset */
@@ -7,12 +13,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-@import "media/media";
-@import "html/index";
-@import "html/vision";
 
 
 
@@ -31,19 +31,7 @@ main {
     background-color: rgb(0, 0, 0);
   }
 
-  // Agrupacion de imagenes y estilos
-  .BOX-one {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .BOX-two {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
+  
 
   // Estilos de texto
   h1 {
