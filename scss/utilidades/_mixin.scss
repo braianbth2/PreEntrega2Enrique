@@ -1,3 +1,10 @@
-@import "/scss/utilidades/variables"
+
+
+@mixin mobile {
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        @content;
+        
+    }
+}
 
 
